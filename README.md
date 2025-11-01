@@ -29,7 +29,7 @@ Add your Excel functions in `src/functions.zig` and register them in `src/main.z
 ## Using Pre-built XLL
 
 1. Go to the [Actions tab](../../actions) and click on the latest successful workflow run
-2. Download the `standalone.xll` artifact
+2. Scroll down to the very bottom and download the **zigxll-standalone** artifact
 3. Extract the XLL file from the zip
 4. Double-click `standalone.xll` to load it into Excel
 5. If prompted by security warnings, click "Enable" to allow the add-in
