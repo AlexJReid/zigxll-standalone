@@ -14,7 +14,7 @@ Once loaded (double click the .xll), you can use the custom functions in any Exc
 
 This will return `84` (doubles the input number).
 
-## Building from Source
+## Building the XLL
 
 ```bash
 zig build
@@ -22,11 +22,11 @@ zig build
 
 The XLL will be output to `zig-out/lib/standalone.xll`.
 
-## Adding Functions
+## Adding more functions
 
-Add your Excel functions in `src/functions.zig` and register them in `src/main.zig`.
+Add your Excel functions to `src/functions.zig` using the function in that file as a guide.
 
-## Using Pre-built XLL
+## Try out the pre-built XLL
 
 1. Go to the [Actions tab](../../actions) and click on the latest successful workflow run
 2. Scroll down to the very bottom and download the **zigxll-standalone** artifact
