@@ -14,6 +14,12 @@ This will return `84` (doubles the input number).
 
 ## Building the XLL
 
+If starting from scratch you will need to fetch to get the hash and add that to your build.zig.zon. This has already been done for this repo.
+
+```bash
+zig fetch  https://github.com/alexjreid/zigxll/archive/refs/tags/v0.2.4.tar.gz
+```
+
 ```bash
 zig build
 ```
