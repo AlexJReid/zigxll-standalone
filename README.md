@@ -2,11 +2,9 @@
 
 A standalone Excel XLL add-in built with [ZigXLL](https://github.com/AlexJReid/zigxll).
 
-Built automatically with GitHub Actions for Windows.
-
 ## Usage
 
-Once loaded (double click the .xll), you can use the custom functions in any Excel spreadsheet:
+Once loaded (double click the built .xll - see below), you can use the custom functions in any Excel spreadsheet:
 
 ```
 =dblit(42)
@@ -30,6 +28,7 @@ Add your Excel functions to `src/functions.zig` using the function in that file 
 
 1. Go to the [Actions tab](../../actions) and click on the latest successful workflow run
 2. Scroll down to the very bottom and download the **zigxll-standalone** artifact
-3. Extract the XLL file from the zip
-4. Double-click `standalone.xll` to load it into Excel
-5. If prompted by security warnings, find the .xll file, right click, choose Properties and then "Enable" to allow the add-in
+3. Extract the XLL file from the zip to a safe location - desktop works
+4. You will need to unblock it. More info: https://support.microsoft.com/en-gb/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb
+5. Double-click `standalone.xll` to load it into Excel
+
