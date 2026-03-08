@@ -1,12 +1,12 @@
 .{
     .name = .zigxll_standalone,
-    .version = "0.0.2",
+    .version = "0.0.3",
     .fingerprint = 0x9d00d0bc4a9b218c,
     .minimum_zig_version = "0.15.1",
     .dependencies = .{
         .xll = .{
-            .url = "https://github.com/alexjreid/zigxll/archive/refs/tags/v0.2.4.tar.gz",
-            .hash = "xll-0.2.4-rzwxcZ7ABAALbBeCrl2Th2y_JQTcrMoXNDCnRD6G64yD",
+            .url = "https://github.com/alexjreid/zigxll/archive/refs/tags/v0.2.5.tar.gz",
+            .hash = "xll-0.2.5-rzwxcYorBACPxJIKjddOcSRxd3k3vAs9b9_CR5D0gIuq",
         },
     },
     .paths = .{
