@@ -35,6 +35,21 @@ zig build
 
 The XLL will be output to `zig-out/lib/standalone.xll`.
 
+## RTD Server
+
+This XLL includes a Timer RTD server that ticks a counter every ~2 seconds.
+
+| ProgID | CLSID |
+|--------|-------|
+| `standalone.timer` | `{B2C3D4E5-F6A7-8901-2345-6789ABCDEF01}` |
+
+The RTD server is registered automatically when the XLL is loaded into Excel (writes to `HKCU\Software\Classes`, no admin needed).
+
+**Usage in Excel:**
+
+- Direct RTD call: `=RTD("standalone.timer", , "tick")`
+- Wrapper function: `=TIMER()`
+
 ## Adding more functions
 
 Add your Excel functions to `src/functions.zig` using the function in that file as a guide.
