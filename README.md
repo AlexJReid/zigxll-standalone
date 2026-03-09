@@ -6,7 +6,10 @@ This is a **template repository**. [Create your own repo from this template](htt
 
 ## Cross-compilation setup
 
-ZigXLL cross-compiles Windows XLL add-ins from macOS or Linux using [xwin](https://jake-shadle.github.io/xwin/).
+Although Excel XLL assemblies only run on Windows, on non-Windows platforms ZigXLL cross-compiles Windows XLL add-ins from macOS or Linux with the help of the most excellent [xwin](https://jake-shadle.github.io/xwin/).
+
+**Windows:**
+Skip this section.
 
 **macOS:**
 ```bash
