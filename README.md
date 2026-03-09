@@ -2,23 +2,29 @@
 
 A standalone Excel XLL add-in built with [ZigXLL](https://github.com/AlexJReid/zigxll).
 
-## Usage
+This is a **template repository**. [Create your own repo from this template](https://github.com/AlexJReid/zigxll-standalone/generate) to get started quickly.
 
-Once loaded (double click the built .xll - see below), you can use the custom functions in any Excel spreadsheet:
+## Cross-compilation setup
 
+ZigXLL cross-compiles Windows XLL add-ins from macOS or Linux using [xwin](https://jake-shadle.github.io/xwin/).
+
+**macOS:**
+```bash
+brew install xwin
+xwin --accept-license splat --output ~/.xwin
 ```
-=dblit(42)
+
+**Linux:**
+```bash
+cargo install xwin
+xwin --accept-license splat --output ~/.xwin
 ```
 
-This will return `84` (doubles the input number).
+If Cargo isn't available, install Rust via [rustup.rs](https://rustup.rs/) or download a prebuilt binary from the [xwin releases page](https://github.com/Jake-Shadle/xwin/releases).
+
+See the [ZigXLL README](https://github.com/AlexJReid/zigxll) for more details.
 
 ## Building the XLL
-
-If starting from scratch you will need to fetch to get the hash and add that to your build.zig.zon. This has already been done for this repo.
-
-```bash
-zig fetch  https://github.com/alexjreid/zigxll/archive/refs/tags/v0.2.4.tar.gz
-```
 
 ```bash
 zig build
@@ -37,4 +43,3 @@ Add your Excel functions to `src/functions.zig` using the function in that file 
 3. Extract the XLL file from the zip to a safe location - desktop works
 4. You will need to unblock it. More info: https://support.microsoft.com/en-gb/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb
 5. Double-click `standalone.xll` to load it into Excel
-
