@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.15.1",
     .dependencies = .{
         .xll = .{
-            .url = "https://github.com/alexjreid/zigxll/archive/refs/tags/v0.3.4.tar.gz",
-            .hash = "xll-0.3.4-rzwxcaakBQBnJcEnd8LJ6eBDoXJjaHmon-nNlMnWy8fu",
+            .url = "https://github.com/alexjreid/zigxll/archive/refs/tags/v0.3.10.tar.gz",
+            .hash = "xll-0.3.10-rzwxcZ20BQAOtjScbBQbXYmIBJkFYeaiXjNBHgZmLHiB",
         },
     },
     .paths = .{
